@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="page-header">
-        <img src="img/JD_Logo2.png" alt="JD_Logo" class="navigation-logo">
+        <a href="index.html"><img src="img/JD_Logo2.png" alt="JD_Logo" class="navigation-logo"></a>
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list"> 
                 <li role="presentation"><a href="index.html" role="menuitem" class="navigation-list__item">Home</a></li>
@@ -25,15 +25,18 @@
     </header>
     <h1>Contact</h1>
     <form id="contact-form">
-        <label for="contact-email" class="standard-label">Email: </label>
-        <input id="contact-email" type="email" required>
-
-        <label for="contact-phone" class="standard-label">Phone: </label>
-        <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-        <label for="contact-message" class="standard-label">Message: </label>
-        <textarea id="contact-message" required maxlength="240"></textarea>
-
+        <div class="contact-method">
+            <label for="contact-email" class="standard-label">Email: </label>
+            <input id="contact-email" type="email" required>
+        </div>
+        <div class="contact-method">
+            <label for="contact-phone" class="standard-label">Phone: </label>
+            <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+        </div>
+        <div class="contact-method">
+            <label for="contact-message" class="standard-label">Message: </label>
+            <textarea id="contact-message" required maxlength="240"></textarea>    
+        </div>
         <input type="submit" value="Send Message">
     </form>
     <div><br></div>
@@ -42,11 +45,10 @@
         <a href="mailto:jimmychen9785@gmail.com">Contact me</a><br>
     </div>
     <footer class="page-footer">
-        <p>Find me on</p>
         <div>
-            <img src="img/github.svg" width="30px" height="30px" alt="GitHub">
-            <img src="img/twitter.svg" width="30px" height="30px" alt="Twitter">
-            <img src="img/linkedin.svg" width="30px" height="30px"alt="LinkedIn">
+            <a href="https://github.com/jimmychen97/Portfolio-Site" target="_blank"><img src="img/github.svg" width="30px" height="30px" alt="GitHub"></a> 
+            <a href="https://twitter.com/" target="_blank"><img src="img/twitter.svg" width="30px" height="30px" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/haoyan-chen/" target="_blank"><img src="img/linkedin.svg" width="30px" height="30px" alt="LinkedIn"></a>
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
