@@ -120,7 +120,6 @@ button:focus,
     flex-direction: row;
     max-width: 700px;
     margin: 100px auto;
-    
 }
 
 .profile_portrait {
@@ -163,6 +162,13 @@ button:focus,
     .grid{
         grid-template-columns: 1fr;
         grid-gap: 10px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        padding-left: 20px;
     }
 }
 
